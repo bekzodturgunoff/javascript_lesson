@@ -3,33 +3,17 @@
   padding: 0;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-}
-
-.form {
+.container {
   display: none;
 }
 
-.form-active {
-  display: block;
-  background-color: red;
-}
-
-.color-fliper {
-  width: 300px;
-  height: 300px;
+.active {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.form-active{
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 300px;
+  height: 300px;
+  margin: auto;
 }

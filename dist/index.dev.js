@@ -18,32 +18,52 @@ b = a; // console.log(b);
 
 var w = 5;
 var e = 10;
-var r = "Men"; ///////////
+var r = "Men"; // console.log(w);
+// console.log(e);
+// console.log(r);
+///////////
 // Birinchi usul
 
 w = w + 1;
 e = e + 5;
-r = r + "text man"; //Ikkinchi usul
+r = r + "text man"; // console.log(w);
+// console.log(e);
+// console.log(r);
+//Ikkinchi usul
 
 w += 1;
 e += 5;
-r += "qo'shildi"; /////////////////
+r += " qo'shildim"; // console.log(w);
+// console.log(e);
+// console.log(r);
+/////////////////
 
 var buNomer;
 var buText;
 var buBall;
-BUNOMER = 10;
-BUTEXT = "text";
-BUBALL = 3999; ///////////////
+buNomer = 10;
+buText = "text";
+buBall = 3999; // console.log(buNomer);
+// console.log(buText);
+// console.log(buBall);
+///////////////
 // JavaScriptda nomerlarni bir birga qo'shish
 
-var sum = 10 + 10; // JavaScriptda nomerlarni bir birdan ayrish
+var sum = 10 + 10;
+console.log(sum); // JavaScriptda nomerlarni bir birdan ayrish
 
-var vallue = 20 - 10; // JavaScriptda nomerlarni bir birga ko'paytirish
+var vallue = 20 - 10;
+console.log(vallue); // JavaScriptda nomerlarni bir birga ko'paytirish
 
-var product = 2 * 2; // JavaScriptda nomerlarni bir birga bo'lish
+var product = 2 * 2;
+product *= 5;
+product /= 2;
+product -= 10;
+product += 10;
+console.log(product); // JavaScriptda nomerlarni bir birga bo'lish
 
 var server = 6 / 2;
+console.log(server);
 /* 
 
 +=
@@ -65,10 +85,45 @@ var meningNomerimIkkinchi = 40; // Birinchi usul
 
 meningNomerimIkkinchi = meningNomerimIkkinchi - 1; // Ikkinchi usul
 
-meningNomerimIkkinchi--; // JavaScript da kasr son yaratish
+meningNomerimIkkinchi--;
+console.log(meningNomerimIkkinchi); // JavaScript da kasr son yaratish
 
-var bizningKasrSon = 5.7; ////////////////////
+var bizningKasrSon = 5.7;
+console.log(bizningKasrSon); ////////////////////
 
-var meningKasrim = 0.009; ////////////
+var meningKasrim = 0.009;
+console.log(meningKasrim); ////////////
 
-var kasrSon = 2.5 + 2.0; /////////////
+var kasrSon = 2.5 + 2.1;
+console.log(kasrSon); /////////////
+
+var text = "Mening ismim";
+myName = " Bekzod ";
+var textAge = "yoshim ";
+var age = 18 + "da";
+myName = " Alisher ";
+var allTexts = text + myName + textAge + age;
+console.log(allTexts);
+/*
+
+querySelector(". #")
+querySelectorAll("xamma class larni tanlash uchun")
+getElementById("id")
+getElementByClassName("class")
+
+*/
+
+var heading = document.getElementById("text");
+var openBtn = document.getElementById("open-btn");
+var closeBtn = document.getElementById("close-btn");
+var container = document.getElementById("container");
+heading.textContent = "Bu text JavaScriptda o'zgartirildi.";
+heading.classList.add("text-two");
+heading.classList.remove("text-two");
+console.log(heading);
+openBtn.addEventListener("click", function () {
+  container.classList.add("active");
+});
+closeBtn.addEventListener("click", function () {
+  container.classList.remove("active");
+});
