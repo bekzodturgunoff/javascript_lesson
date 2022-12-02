@@ -1,3 +1,5 @@
+// JavaScript birinchi dars
+
 /*
 undefined, null, boolen, string, symbol, number, object
 */
@@ -78,12 +80,12 @@ buBall = 3999;
 // JavaScriptda nomerlarni bir birga qo'shish
 
 let sum = 10 + 10;
-console.log(sum);
+// console.log(sum);
 
 // JavaScriptda nomerlarni bir birdan ayrish
 
 let vallue = 20 - 10;
-console.log(vallue);
+// console.log(vallue);
 
 // JavaScriptda nomerlarni bir birga ko'paytirish
 
@@ -97,12 +99,12 @@ product -= 10;
 
 product += 10;
 
-console.log(product);
+// console.log(product);
 
 // JavaScriptda nomerlarni bir birga bo'lish
 
 let server = 6 / 2;
-console.log(server);
+// console.log(server);
 
 /* 
 
@@ -137,20 +139,20 @@ meningNomerimIkkinchi = meningNomerimIkkinchi - 1;
 // Ikkinchi usul
 meningNomerimIkkinchi--;
 
-console.log(meningNomerimIkkinchi);
+// console.log(meningNomerimIkkinchi);
 
 // JavaScript da kasr son yaratish
 
 let bizningKasrSon = 5.7;
-console.log(bizningKasrSon);
+// console.log(bizningKasrSon);
 
 ////////////////////
 let meningKasrim = 0.009;
-console.log(meningKasrim);
+// console.log(meningKasrim);
 
 ////////////
 let kasrSon = 2.5 + 2.1;
-console.log(kasrSon);
+// console.log(kasrSon);
 /////////////
 
 let text = "Mening ismim";
@@ -189,7 +191,7 @@ heading.classList.add("text-two");
 
 heading.classList.remove("text-two");
 
-console.log(heading);
+// console.log(heading);
 
 openBtn.addEventListener("click", () => {
   container.classList.add("active");
@@ -198,3 +200,36 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   container.classList.remove("active");
 });
+
+//////////////////////////// JavaScript ikkinchi dars
+
+let thing;
+
+thing = 10 % 2;
+
+// console.log(thing);
+//////////////////////
+
+// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS"
+
+// let myString = "Bu mening \"javascript ichidagi motivatsiyam\" JS"
+
+// let myString = 'Bu mening /javascript ichidagi motivatsiyam/" Js'
+
+// let myString = ` 'Bu mening "javascript ichidagi motivatsiyam" JS' `;
+
+/////////////////////
+
+let ourText = "Birinchi text ";
+
+ourText += "Ikkinchi text";
+
+// console.log(ourText);
+
+////////////////////
+
+let compName = "FullStack";
+
+let textName = "Hello welcome to the" + compName + "located in Namangan";
+
+console.log(textName);

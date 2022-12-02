@@ -1,5 +1,7 @@
 "use strict";
 
+// JavaScript birinchi dars
+
 /*
 undefined, null, boolen, string, symbol, number, object
 */
@@ -49,21 +51,21 @@ buBall = 3999; // console.log(buNomer);
 ///////////////
 // JavaScriptda nomerlarni bir birga qo'shish
 
-var sum = 10 + 10;
-console.log(sum); // JavaScriptda nomerlarni bir birdan ayrish
+var sum = 10 + 10; // console.log(sum);
+// JavaScriptda nomerlarni bir birdan ayrish
 
-var vallue = 20 - 10;
-console.log(vallue); // JavaScriptda nomerlarni bir birga ko'paytirish
+var vallue = 20 - 10; // console.log(vallue);
+// JavaScriptda nomerlarni bir birga ko'paytirish
 
 var product = 2 * 2;
 product *= 5;
 product /= 2;
 product -= 10;
-product += 10;
-console.log(product); // JavaScriptda nomerlarni bir birga bo'lish
+product += 10; // console.log(product);
+// JavaScriptda nomerlarni bir birga bo'lish
 
-var server = 6 / 2;
-console.log(server);
+var server = 6 / 2; // console.log(server);
+
 /* 
 
 +=
@@ -85,17 +87,17 @@ var meningNomerimIkkinchi = 40; // Birinchi usul
 
 meningNomerimIkkinchi = meningNomerimIkkinchi - 1; // Ikkinchi usul
 
-meningNomerimIkkinchi--;
-console.log(meningNomerimIkkinchi); // JavaScript da kasr son yaratish
+meningNomerimIkkinchi--; // console.log(meningNomerimIkkinchi);
+// JavaScript da kasr son yaratish
 
-var bizningKasrSon = 5.7;
-console.log(bizningKasrSon); ////////////////////
+var bizningKasrSon = 5.7; // console.log(bizningKasrSon);
+////////////////////
 
-var meningKasrim = 0.009;
-console.log(meningKasrim); ////////////
+var meningKasrim = 0.009; // console.log(meningKasrim);
+////////////
 
-var kasrSon = 2.5 + 2.1;
-console.log(kasrSon); /////////////
+var kasrSon = 2.5 + 2.1; // console.log(kasrSon);
+/////////////
 
 var text = "Mening ismim";
 myName = " Bekzod ";
@@ -119,11 +121,28 @@ var closeBtn = document.getElementById("close-btn");
 var container = document.getElementById("container");
 heading.textContent = "Bu text JavaScriptda o'zgartirildi.";
 heading.classList.add("text-two");
-heading.classList.remove("text-two");
-console.log(heading);
+heading.classList.remove("text-two"); // console.log(heading);
+
 openBtn.addEventListener("click", function () {
   container.classList.add("active");
 });
 closeBtn.addEventListener("click", function () {
   container.classList.remove("active");
-});
+}); //////////////////////////// JavaScript ikkinchi dars
+
+var thing;
+thing = 10 % 2; // console.log(thing);
+//////////////////////
+// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS"
+// let myString = "Bu mening \"javascript ichidagi motivatsiyam\" JS"
+// let myString = 'Bu mening /javascript ichidagi motivatsiyam/" Js'
+// let myString = ` 'Bu mening "javascript ichidagi motivatsiyam" JS' `;
+/////////////////////
+
+var ourText = "Birinchi text ";
+ourText += "Ikkinchi text"; // console.log(ourText);
+////////////////////
+
+var compName = "FullStack";
+var textName = "Hello welcome to the" + compName + "located in Namangan";
+console.log(textName);
