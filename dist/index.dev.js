@@ -218,6 +218,7 @@ var shiftArray = [["Anvar", 23], ["cat", 3]];
 var shiftedArray = shiftArray.shift(); // console.log(shiftArray);
 // console.log(shiftedArray);
 //////////// UNSHIFT
+// unshift() funksiysi arrayni boshiga data type qo'shadi
 
 var unshiftArray = ["Avaz", "J", "cat"];
 unshiftArray.shift();

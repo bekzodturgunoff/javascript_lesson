@@ -375,6 +375,8 @@ let shiftedArray = shiftArray.shift();
 
 //////////// UNSHIFT
 
+// unshift() funksiysi arrayni boshiga data type qo'shadi
+
 let unshiftArray = ["Avaz", "J", "cat"];
 
 unshiftArray.shift();
