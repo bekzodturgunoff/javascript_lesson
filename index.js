@@ -322,4 +322,63 @@ yangiArray[1] = 60;
 
 // console.log(yangiArray);
 
- 
+// Kop array lar
+
+let moreArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [
+    [10, 11, 12],
+    [13, 14, 15],
+  ],
+];
+
+// console.log(moreArray);
+
+// push() funksiya arrayni oxiriga data type qo'shadi.
+
+///////////////////
+let pushArray = ["Alisher", "J", "cat"];
+
+pushArray.push(["Anvar", "joy"]);
+
+// console.log(pushArray);
+
+////////////// PUSH
+
+let removeArray = [1, 2, 3];
+
+// pop() funksya array ichidagi eng oxirgi data type ni chiqarib
+// o'zini variable ga joylaydi. Misol uchun pastga qarang.
+
+let removedArray = removeArray.pop();
+
+// console.log(removedArray);
+
+/////////////
+
+////////////// SHIFT
+// shift() funksya array ichidagi birinchi data type ni chiqarib
+// o'zini variable ga joylaydi. Misol uchun pastga qarang.
+
+let shiftArray = [
+  ["Anvar", 23],
+  ["cat", 3],
+];
+
+let shiftedArray = shiftArray.shift();
+
+// console.log(shiftArray);
+
+// console.log(shiftedArray);
+
+//////////// UNSHIFT
+
+let unshiftArray = ["Avaz", "J", "cat"];
+
+unshiftArray.shift();
+console.log(unshiftArray);
+
+unshiftArray.unshift("Bekzod");
+console.log(unshiftArray);
