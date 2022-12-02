@@ -144,5 +144,54 @@ ourText += "Ikkinchi text"; // console.log(ourText);
 ////////////////////
 
 var compName = "FullStack";
-var textName = "Hello welcome to the" + compName + "located in Namangan";
-console.log(textName);
+var textName = "Hello welcome to the " + compName + " Academy"; // console.log(textName);
+
+var someText = "zo'r";
+var anotherText = "Fullstack "; // console.log((anotherText += someText));
+///////////////////////
+
+birinchiIsimUzunligi = 0;
+birinchiIsim = "watch"; // console.log(birinchiIsimUzunligi);
+
+birinchiIsimUzunligi = birinchiIsim.length; // console.log(birinchiIsimUzunligi);
+
+var firstLetterOfFirstName = "";
+var firstName = "watch"; // console.log(firstLetterOfFirstName);
+
+firstLetterOfFirstName = firstName[0];
+firstLetterOfFirstName = firstName[1];
+firstLetterOfFirstName = firstName[2];
+firstLetterOfFirstName = firstName[3];
+firstLetterOfFirstName = firstName[4]; // console.log(firstLetterOfFirstName);
+////////////////////////////
+
+var myText = "Jello World";
+myText[0] = "H"; // XATO
+
+myText = "Hello World"; ////////////////////////////
+// console.log((birinchiIsimUzunligi = birinchiIsim[birinchiIsim.length - 1]));
+// console.log((birinchiIsimUzunligi = birinchiIsim[birinchiIsim.length - 2]));
+// console.log((birinchiIsimUzunligi = birinchiIsim[birinchiIsim.length - 3]));
+///////////////////
+
+function game(ega, sifat, fel, qoshimcha) {
+  var result = ""; // return = qaytarish
+
+  return result += sifat + " " + ega + " magzinga " + qoshimcha + " " + fel;
+}
+
+console.log(game("it", "Katta", "yugurdi", "tez")); //////////////////////////////
+// Array // Yangi mavzu
+// Array ichidagi xar bir data type (undefined, null, boolen, string, symbol, number, object)
+// vergul bilan ajratiladi
+
+var ourArray = ["Alisher", 22]; // console.log(ourArray);
+///////////////////////
+
+var ourArrayMulti = [["dunyo", 42], ["barchasi", 101010]];
+var myData = ourArrayMulti[0]; // console.log(myData);
+//////////////////////
+
+var yangiArray = ["nimadur", 50]; // console.log(yangiArray);
+
+yangiArray[1] = 60; // console.log(yangiArray);
