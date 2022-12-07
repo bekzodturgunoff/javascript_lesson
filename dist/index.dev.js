@@ -224,4 +224,23 @@ var unshiftArray = ["Avaz", "J", "cat"];
 unshiftArray.shift();
 console.log(unshiftArray);
 unshiftArray.unshift("Bekzod");
-console.log(unshiftArray);
+console.log(unshiftArray); /////////  3 - dars
+// Arraylar ichida array
+
+var myList = [["Makaron", 5], ["Tuxum", 9], ["Go'sht", 3], ["Kartoshka", 1], ["Sabzavotlar", 6], [["Shampun", 1], ["Suvun", 2]]]; ////
+// Function // Funksiya
+// Funksyalar bizga qayta ishlatishimiz mumkin
+//bo'lgan funksiyalarni yaratishga yordam beradi
+
+function qaytaIshlatadiganFunksiya() {
+  console.log("Hello world");
+}
+
+qaytaIshlatadiganFunksiya(); //// Funksiyaga malumot o'tqazishda yordam beradi;
+
+function bizningFunksiya(a, b) {
+  console.log(a - b);
+}
+
+bizningFunksiya(10, 5); // Javob: 5
+///// Scope //
