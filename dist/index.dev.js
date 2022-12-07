@@ -244,3 +244,28 @@ function bizningFunksiya(a, b) {
 
 bizningFunksiya(10, 5); // Javob: 5
 ///// Scope //
+
+function notGlobal() {
+  var thisIsNotGlobal = 8;
+  console.log(thisIsGlobal + " " + thisIsNotGlobal);
+}
+
+var thisIsGlobal = "Hello world";
+
+function global() {
+  console.log(thisIsGlobal);
+}
+
+notGlobal();
+global();
+console.log(thisIsGlobal); // console.log(thisIsNotGlobal);
+////////////////
+
+var meningKiyimim = "Kiyim";
+
+function kiyim() {
+  // let meningKiyimim = "Boshqa kiyim";
+  return meningKiyimim;
+}
+
+console.log(kiyim());
