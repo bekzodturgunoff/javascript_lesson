@@ -104,8 +104,8 @@ myName = " Bekzod ";
 var textAge = "yoshim ";
 var age = 18 + "da";
 myName = " Alisher ";
-var allTexts = text + myName + textAge + age;
-console.log(allTexts);
+var allTexts = text + myName + textAge + age; // console.log(allTexts);
+
 /*
 
 querySelector(". #")
@@ -133,10 +133,11 @@ closeBtn.addEventListener("click", function () {
 var thing;
 thing = 10 % 2; // console.log(thing);
 //////////////////////
-// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS"
+// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS" // xato
 // let myString = "Bu mening \"javascript ichidagi motivatsiyam\" JS"
-// let myString = 'Bu mening /javascript ichidagi motivatsiyam/" Js'
+// let myString = 'Bu mening "javascript ichidagi motivatsiyam" Js'
 // let myString = ` 'Bu mening "javascript ichidagi motivatsiyam" JS' `;
+// console.log(myString)
 /////////////////////
 
 var ourText = "Birinchi text ";
@@ -167,6 +168,7 @@ firstLetterOfFirstName = firstName[4]; // console.log(firstLetterOfFirstName);
 
 var myText = "Jello World";
 myText[0] = "H"; // XATO
+// console.log(myText[0]);
 
 myText = "Hello World"; ////////////////////////////
 // console.log((birinchiIsimUzunligi = birinchiIsim[birinchiIsim.length - 1]));
@@ -178,12 +180,12 @@ function game(ega, sifat, fel, qoshimcha) {
   var result = ""; // return = qaytarish
 
   return result += sifat + " " + ega + " magzinga " + qoshimcha + " " + fel;
-}
-
-console.log(game("it", "Katta", "yugurdi", "tez")); //////////////////////////////
+} // console.log(game("it", "Katta", "yugurdi", "tez"));
+//////////////////////////////
 // Array // Yangi mavzu
 // Array ichidagi xar bir data type (undefined, null, boolen, string, symbol, number, object)
 // vergul bilan ajratiladi
+
 
 var ourArray = ["Alisher", 22]; // console.log(ourArray);
 ///////////////////////
@@ -192,7 +194,7 @@ var ourArrayMulti = [["dunyo", 42], ["barchasi", 101010]];
 var myData = ourArrayMulti[0]; // console.log(myData);
 //////////////////////
 
-var yangiArray = ["nimadur", 50]; // console.log(yangiArray);
+var yangiArray = ["somthing", 50]; // console.log(yangiArray);
 
 yangiArray[1] = 60; // console.log(yangiArray);
 // Kop array lar
@@ -221,13 +223,14 @@ var shiftedArray = shiftArray.shift(); // console.log(shiftArray);
 // unshift() funksiysi arrayni boshiga data type qo'shadi
 
 var unshiftArray = ["Avaz", "J", "cat"];
-unshiftArray.shift();
-console.log(unshiftArray);
-unshiftArray.unshift("Bekzod");
-console.log(unshiftArray); /////////  3 - dars
+unshiftArray.shift(); // console.log(unshiftArray);
+
+unshiftArray.unshift("Bekzod"); // console.log(unshiftArray);
+/////////  3 - dars
 // Arraylar ichida array
 
-var myList = [["Makaron", 5], ["Tuxum", 9], ["Go'sht", 3], ["Kartoshka", 1], ["Sabzavotlar", 6], [["Shampun", 1], ["Suvun", 2]]]; ////
+var myList = [["Makaron", 5], ["Tuxum", 9], ["Go'sht", 3], ["Kartoshka", 1], ["Sabzavotlar", 6], [["Shampun", 1], ["Suvun", 2]]]; // console.log(myList);
+////
 // Function // Funksiya
 // Funksyalar bizga qayta ishlatishimiz mumkin
 //bo'lgan funksiyalarni yaratishga yordam beradi
@@ -268,4 +271,4 @@ function kiyim() {
   return meningKiyimim;
 }
 
-console.log(kiyim());
+console.log(kiyim()); /////////////////

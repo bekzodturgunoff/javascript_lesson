@@ -167,7 +167,7 @@ myName = " Alisher ";
 
 let allTexts = text + myName + textAge + age;
 
-console.log(allTexts);
+// console.log(allTexts);
 /*
 
 querySelector(". #")
@@ -208,15 +208,18 @@ let thing;
 thing = 10 % 2;
 
 // console.log(thing);
+
 //////////////////////
 
-// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS"
+// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS" // xato
 
 // let myString = "Bu mening \"javascript ichidagi motivatsiyam\" JS"
 
-// let myString = 'Bu mening /javascript ichidagi motivatsiyam/" Js'
+// let myString = 'Bu mening "javascript ichidagi motivatsiyam" Js'
 
 // let myString = ` 'Bu mening "javascript ichidagi motivatsiyam" JS' `;
+
+// console.log(myString)
 
 /////////////////////
 
@@ -271,6 +274,7 @@ firstLetterOfFirstName = firstName[4];
 let myText = "Jello World";
 
 myText[0] = "H"; // XATO
+// console.log(myText[0]);
 
 myText = "Hello World";
 
@@ -289,7 +293,7 @@ function game(ega, sifat, fel, qoshimcha) {
   return (result += sifat + " " + ega + " magzinga " + qoshimcha + " " + fel);
 }
 
-console.log(game("it", "Katta", "yugurdi", "tez"));
+// console.log(game("it", "Katta", "yugurdi", "tez"));
 
 //////////////////////////////
 
@@ -314,7 +318,7 @@ let myData = ourArrayMulti[0];
 // console.log(myData);
 //////////////////////
 
-let yangiArray = ["nimadur", 50];
+let yangiArray = ["somthing", 50];
 
 // console.log(yangiArray);
 
@@ -380,10 +384,10 @@ let shiftedArray = shiftArray.shift();
 let unshiftArray = ["Avaz", "J", "cat"];
 
 unshiftArray.shift();
-console.log(unshiftArray);
+// console.log(unshiftArray);
 
 unshiftArray.unshift("Bekzod");
-console.log(unshiftArray);
+// console.log(unshiftArray);
 
 /////////  3 - dars
 
@@ -400,6 +404,8 @@ let myList = [
     ["Suvun", 2],
   ],
 ];
+
+// console.log(myList);
 
 ////
 
@@ -451,3 +457,8 @@ function kiyim() {
   return meningKiyimim;
 }
 console.log(kiyim());
+
+/////////////////
+
+
+
