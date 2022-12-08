@@ -418,7 +418,7 @@ function qaytaIshlatadiganFunksiya() {
   console.log("Hello world");
 }
 
-qaytaIshlatadiganFunksiya();
+// qaytaIshlatadiganFunksiya();
 
 //// Funksiyaga malumot o'tqazishda yordam beradi;
 
@@ -426,7 +426,7 @@ function bizningFunksiya(a, b) {
   console.log(a - b);
 }
 
-bizningFunksiya(10, 5); // Javob: 5
+// bizningFunksiya(10, 5); // Javob: 5
 
 ///// Scope //
 
@@ -441,10 +441,10 @@ function global() {
   console.log(thisIsGlobal);
 }
 
-notGlobal();
-global();
+// notGlobal();
+// global();
 
-console.log(thisIsGlobal);
+// console.log(thisIsGlobal);
 // console.log(thisIsNotGlobal);
 
 ////////////////
@@ -456,9 +456,37 @@ function kiyim() {
 
   return meningKiyimim;
 }
-console.log(kiyim());
+// console.log(kiyim());
 
 /////////////////
 
+// funksiyani return orqali qaytarish
+
+function simpleFunc(num) {
+  return num - 7;
+}
+
+// console.log(simpleFunc(10)); // 3
+
+//
+
+// function ichida return ishlatmasak undefiened chiqadi
+// Mislo uchun pastga qarang
+
+let zero = 0;
+
+function addThree() {
+  zero = zero + 3; // to'g'irlash uchun zero dan oldin return ishlatishimiz kerak
+}
+
+// console.log(addThree());
+
+let zeroTwo = 0;
+
+function addFive() {
+  zeroTwo += 5; // to'g'irlash uchun zeroTwo dan oldin return ishlatishimiz kerak
+}
+
+// console.log(addFive());
 
 

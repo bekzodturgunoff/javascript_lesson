@@ -237,16 +237,15 @@ var myList = [["Makaron", 5], ["Tuxum", 9], ["Go'sht", 3], ["Kartoshka", 1], ["S
 
 function qaytaIshlatadiganFunksiya() {
   console.log("Hello world");
-}
+} // qaytaIshlatadiganFunksiya();
+//// Funksiyaga malumot o'tqazishda yordam beradi;
 
-qaytaIshlatadiganFunksiya(); //// Funksiyaga malumot o'tqazishda yordam beradi;
 
 function bizningFunksiya(a, b) {
   console.log(a - b);
-}
-
-bizningFunksiya(10, 5); // Javob: 5
+} // bizningFunksiya(10, 5); // Javob: 5
 ///// Scope //
+
 
 function notGlobal() {
   var thisIsNotGlobal = 8;
@@ -257,18 +256,40 @@ var thisIsGlobal = "Hello world";
 
 function global() {
   console.log(thisIsGlobal);
-}
-
-notGlobal();
-global();
-console.log(thisIsGlobal); // console.log(thisIsNotGlobal);
+} // notGlobal();
+// global();
+// console.log(thisIsGlobal);
+// console.log(thisIsNotGlobal);
 ////////////////
+
 
 var meningKiyimim = "Kiyim";
 
 function kiyim() {
   // let meningKiyimim = "Boshqa kiyim";
   return meningKiyimim;
-}
+} // console.log(kiyim());
+/////////////////
+// funksiyani return orqali qaytarish
 
-console.log(kiyim()); /////////////////
+
+function simpleFunc(num) {
+  return num - 7;
+} // console.log(simpleFunc(10)); // 3
+//
+// function ichida return ishlatmasak undefiened chiqadi
+// Mislo uchun pastga qarang
+
+
+var zero = 0;
+
+function addThree() {
+  zero = zero + 3; // to'g'irlash uchun zero dan oldin return ishlatishimiz kerak
+} // console.log(addThree());
+
+
+var zeroTwo = 0;
+
+function addFive() {
+  zeroTwo += 5; // to'g'irlash uchun zeroTwo dan oldin return ishlatishimiz kerak
+} // console.log(addFive());
