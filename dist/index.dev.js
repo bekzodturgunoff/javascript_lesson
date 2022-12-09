@@ -293,3 +293,15 @@ var zeroTwo = 0;
 function addFive() {
   zeroTwo += 5; // to'g'irlash uchun zeroTwo dan oldin return ishlatishimiz kerak
 } // console.log(addFive());
+// Yangi mavzu (boolen) true false qanday ishlatish
+
+
+var personAge = 17;
+var isOldEnough = personAge >= 18;
+
+if (isOldEnough) {
+  console.log("Alisher prava olishi mumkin");
+} else {
+  var yearsLeft = 18 - personAge;
+  console.log("Alisher hali prava olaolmaydi. Yana ".concat(yearsLeft, " yil kutib turing :)"));
+}

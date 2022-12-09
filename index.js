@@ -489,4 +489,16 @@ function addFive() {
 
 // console.log(addFive());
 
+// Yangi mavzu (boolen) true false qanday ishlatish
 
+const personAge = 17;
+const isOldEnough = personAge >= 18;
+
+if (isOldEnough) {
+  console.log("Alisher prava olishi mumkin");
+} else {
+  const yearsLeft = 18 - personAge;
+  console.log(
+    `Alisher hali prava olaolmaydi. Yana ${yearsLeft} yil kutib turing :)`
+  );
+}
