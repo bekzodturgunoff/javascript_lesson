@@ -296,12 +296,32 @@ function addFive() {
 // Yangi mavzu (boolen) true false qanday ishlatish
 
 
+var isIceCreamOn = false;
+
+if (isIceCreamOn) {// console.log("Alisher muzqaymoq yeyishi mumkin");
+} else {// console.log("Alisher muzqaymoq yeyishi mumkin emas");
+  }
+
 var personAge = 17;
 var isOldEnough = personAge >= 18;
 
-if (isOldEnough) {
-  console.log("Alisher prava olishi mumkin");
+if (isOldEnough) {// console.log("Alisher prava olishi mumkin");
 } else {
-  var yearsLeft = 18 - personAge;
-  console.log("Alisher hali prava olaolmaydi. Yana ".concat(yearsLeft, " yil kutib turing :)"));
-}
+  var yearsLeft = 18 - personAge; // console.log(
+  //   `Alisher hali prava olaolmaydi. Yana ${yearsLeft} yil kutib turing :)`
+  // );
+} // Falsy values: 0, "", undefined, null, NaN
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// String number vs number
+
+
+var inputYear = "1991"; // Number() function
+// console.log(Number(inputYear), inputYear); // number (1991) // text ('1991')
+// console.log(inputYear + 18); // 199118
+// console.log(Number(inputYear) + 18);
+// console.log(Number("Alisher")); // NaN // Nomer emas // Not a Number // Mavjud bo'lmagan nomer
+// console.log(String(20), 20); // text doim oq rangda ko'rinadi
