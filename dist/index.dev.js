@@ -131,13 +131,13 @@ closeBtn.addEventListener("click", function () {
 }); //////////////////////////// JavaScript ikkinchi dars
 
 var thing;
-thing = 10 % 2; // console.log(thing);
+thing = 11 % 2; // console.log(thing);
 //////////////////////
-// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS" // xato
+// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS' // xato
 // let myString = "Bu mening \"javascript ichidagi motivatsiyam\" JS"
 // let myString = 'Bu mening "javascript ichidagi motivatsiyam" Js'
-// let myString = ` 'Bu mening "javascript ichidagi motivatsiyam" JS' `;
-// console.log(myString)
+
+var myString = " Bu mening \"javascript ichidagi motivatsiyam\" JS "; // console.log(myString);
 /////////////////////
 
 var ourText = "Birinchi text ";
@@ -151,8 +151,8 @@ var someText = "zo'r";
 var anotherText = "Fullstack "; // console.log((anotherText += someText));
 ///////////////////////
 
-birinchiIsimUzunligi = 0;
-birinchiIsim = "watch"; // console.log(birinchiIsimUzunligi);
+var birinchiIsimUzunligi = 0;
+var birinchiIsim = "watch"; // console.log(birinchiIsimUzunligi);
 
 birinchiIsimUzunligi = birinchiIsim.length; // console.log(birinchiIsimUzunligi);
 
@@ -175,23 +175,22 @@ myText = "Hello World"; ////////////////////////////
 // console.log((birinchiIsimUzunligi = birinchiIsim[birinchiIsim.length - 2]));
 // console.log((birinchiIsimUzunligi = birinchiIsim[birinchiIsim.length - 3]));
 ///////////////////
-
-function game(ega, sifat, fel, qoshimcha) {
-  var result = ""; // return = qaytarish
-
-  return result += sifat + " " + ega + " magzinga " + qoshimcha + " " + fel;
-} // console.log(game("it", "Katta", "yugurdi", "tez"));
+// function game(ega, sifat, fel, qoshimcha) {
+//   let result = "";
+//   // return = qaytarish
+//   return (result += sifat + " " + ega + " magzinga " + qoshimcha + " " + fel);
+// }
+// console.log(game("it", "Katta", "yugurdi", "tez"));
 //////////////////////////////
 // Array // Yangi mavzu
 // Array ichidagi xar bir data type (undefined, null, boolen, string, symbol, number, object)
 // vergul bilan ajratiladi
 
-
 var ourArray = ["Alisher", 22]; // console.log(ourArray);
 ///////////////////////
 
 var ourArrayMulti = [["dunyo", 42], ["barchasi", 101010]];
-var myData = ourArrayMulti[0]; // console.log(myData);
+var myData = ourArrayMulti[0]; // console.log(ourArrayMulti);
 //////////////////////
 
 var yangiArray = ["somthing", 50]; // console.log(yangiArray);
@@ -199,11 +198,12 @@ var yangiArray = ["somthing", 50]; // console.log(yangiArray);
 yangiArray[1] = 60; // console.log(yangiArray);
 // Kop array lar
 
-var moreArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], [13, 14, 15]]]; // console.log(moreArray);
+var moreArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], [13, 14, 15]]]; // console.log(moreArray[3][0][2]);
 // push() funksiya arrayni oxiriga data type qo'shadi.
 ///////////////////
 
-var pushArray = ["Alisher", "J", "cat"];
+var pushArray = ["Alisher", "J", "cat"]; // console.log(pushArray);
+
 pushArray.push(["Anvar", "joy"]); // console.log(pushArray);
 ////////////// PUSH
 
@@ -229,7 +229,7 @@ unshiftArray.unshift("Bekzod"); // console.log(unshiftArray);
 /////////  3 - dars
 // Arraylar ichida array
 
-var myList = [["Makaron", 5], ["Tuxum", 9], ["Go'sht", 3], ["Kartoshka", 1], ["Sabzavotlar", 6], [["Shampun", 1], ["Suvun", 2]]]; // console.log(myList);
+var myList = [["Makaron", 5], ["Tuxum", 9], ["Go'sht", 3], ["Kartoshka", 1], ["Sabzavotlar", 6], [["Shampun", 1], ["Suvun", 2]]]; // console.log(myList[5][1][0]);
 ////
 // Function // Funksiya
 // Funksyalar bizga qayta ishlatishimiz mumkin
@@ -275,7 +275,7 @@ function kiyim() {
 
 function simpleFunc(num) {
   return num - 7;
-} // console.log(simpleFunc(10)); // 3
+} // console.log(simpleFunc(20)); // 3
 //
 // function ichida return ishlatmasak undefiened chiqadi
 // Mislo uchun pastga qarang
@@ -296,18 +296,19 @@ function addFive() {
 // Yangi mavzu (boolen) true false qanday ishlatish
 
 
-var isIceCreamOn = false;
+var isIceCreamOn = true;
 
 if (isIceCreamOn) {// console.log("Alisher muzqaymoq yeyishi mumkin");
 } else {// console.log("Alisher muzqaymoq yeyishi mumkin emas");
   }
 
-var personAge = 17;
+var personAge = 18;
 var isOldEnough = personAge >= 18;
 
 if (isOldEnough) {// console.log("Alisher prava olishi mumkin");
 } else {
-  var yearsLeft = 18 - personAge; // console.log(
+  var yearsLeft = 18 - personAge; // console.log(yearsLeft);
+  // console.log(
   //   `Alisher hali prava olaolmaydi. Yana ${yearsLeft} yil kutib turing :)`
   // );
 } // Falsy values: 0, "", undefined, null, NaN
@@ -322,6 +323,110 @@ if (isOldEnough) {// console.log("Alisher prava olishi mumkin");
 var inputYear = "1991"; // Number() function
 // console.log(Number(inputYear), inputYear); // number (1991) // text ('1991')
 // console.log(inputYear + 18); // 199118
-// console.log(Number(inputYear) + 18);
+// console.log(Number(inputYear) + 18); // 2009
 // console.log(Number("Alisher")); // NaN // Nomer emas // Not a Number // Mavjud bo'lmagan nomer
 // console.log(String(20), 20); // text doim oq rangda ko'rinadi
+// 4 chi dars
+
+function testEqual(vallue) {
+  if (vallue == 12) {
+    return "Teng";
+  }
+
+  return "Teng emas";
+} // console.log(testEqual(10));
+
+/*
+
+3 === 3 teng
+3 === "3" teng emas
+*/
+
+/*
+
+3 == 3 teng
+3 == "3" teng 
+*/
+
+
+function testEqualTwo(vallue) {
+  if (vallue === 12) {
+    return "Teng";
+  }
+
+  return "Teng emas";
+} // console.log(testEqualTwo("12"));
+
+
+function compareEquality(a, b) {
+  if (a == b) {
+    return "Teng";
+  }
+
+  return "Teng emas";
+} // console.log(compareEquality(10, "10"));
+
+
+function testNotEqual(value) {
+  if (value != 77) {
+    return "Teng emas";
+  }
+
+  return "Teng";
+} // console.log(testNotEqual("77"));
+
+
+function testNotEqualTwo(value) {
+  if (value !== 77) {
+    return "Teng emas";
+  }
+
+  return "Teng";
+} // console.log(testNotEqualTwo("77"));
+// Logical operator
+
+
+function testGreaterThan(value) {
+  if (value > 100) {
+    return "100-dan ko'p";
+  }
+
+  if (value > 10) {
+    return "10-dan ko'p";
+  }
+
+  return "10 yoki undan kam";
+} // console.log(testGreaterThan(10));
+
+
+function testGreaterThanOrEqual(value) {
+  if (value >= 20) {
+    return "20 yoki undan ko'p";
+  }
+
+  if (value >= 10) {
+    return "10 yoki undan ko'p";
+  }
+
+  return "10-dan kam";
+} // console.log(testGreaterThanOrEqual(20));
+
+
+function testLessThan(value) {
+  if (value < 25) {
+    return "25-dan kam";
+  }
+
+  if (value < 55) {
+    return "55-dan kam";
+  }
+
+  return "55 yoki undan ko'p";
+} // console.log(testLessThan(23));
+
+
+function testLessOrEqual(value) {
+  if (value <= 12) {
+    return "12-dan kichkina yoki teng";
+  }
+}

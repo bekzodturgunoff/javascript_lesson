@@ -205,21 +205,21 @@ closeBtn.addEventListener("click", () => {
 
 let thing;
 
-thing = 10 % 2;
+thing = 11 % 2;
 
 // console.log(thing);
 
 //////////////////////
 
-// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS" // xato
+// let myString = "Bu mening "javascript ichidagi motivatsiyam" JS' // xato
 
 // let myString = "Bu mening \"javascript ichidagi motivatsiyam\" JS"
 
 // let myString = 'Bu mening "javascript ichidagi motivatsiyam" Js'
 
-// let myString = ` 'Bu mening "javascript ichidagi motivatsiyam" JS' `;
+let myString = ` Bu mening "javascript ichidagi motivatsiyam" JS `;
 
-// console.log(myString)
+// console.log(myString);
 
 /////////////////////
 
@@ -245,9 +245,9 @@ let anotherText = "Fullstack ";
 
 ///////////////////////
 
-birinchiIsimUzunligi = 0;
+let birinchiIsimUzunligi = 0;
 
-birinchiIsim = "watch";
+let birinchiIsim = "watch";
 
 // console.log(birinchiIsimUzunligi);
 
@@ -286,12 +286,12 @@ myText = "Hello World";
 
 ///////////////////
 
-function game(ega, sifat, fel, qoshimcha) {
-  let result = "";
+// function game(ega, sifat, fel, qoshimcha) {
+//   let result = "";
 
-  // return = qaytarish
-  return (result += sifat + " " + ega + " magzinga " + qoshimcha + " " + fel);
-}
+//   // return = qaytarish
+//   return (result += sifat + " " + ega + " magzinga " + qoshimcha + " " + fel);
+// }
 
 // console.log(game("it", "Katta", "yugurdi", "tez"));
 
@@ -315,7 +315,7 @@ let ourArrayMulti = [
 
 let myData = ourArrayMulti[0];
 
-// console.log(myData);
+// console.log(ourArrayMulti);
 //////////////////////
 
 let yangiArray = ["somthing", 50];
@@ -338,12 +338,14 @@ let moreArray = [
   ],
 ];
 
-// console.log(moreArray);
+// console.log(moreArray[3][0][2]);
 
 // push() funksiya arrayni oxiriga data type qo'shadi.
 
 ///////////////////
 let pushArray = ["Alisher", "J", "cat"];
+
+// console.log(pushArray);
 
 pushArray.push(["Anvar", "joy"]);
 
@@ -405,7 +407,7 @@ let myList = [
   ],
 ];
 
-// console.log(myList);
+// console.log(myList[5][1][0]);
 
 ////
 
@@ -466,7 +468,7 @@ function simpleFunc(num) {
   return num - 7;
 }
 
-// console.log(simpleFunc(10)); // 3
+// console.log(simpleFunc(20)); // 3
 
 //
 
@@ -491,7 +493,7 @@ function addFive() {
 
 // Yangi mavzu (boolen) true false qanday ishlatish
 
-const isIceCreamOn = false;
+const isIceCreamOn = true;
 
 if (isIceCreamOn) {
   // console.log("Alisher muzqaymoq yeyishi mumkin");
@@ -499,13 +501,16 @@ if (isIceCreamOn) {
   // console.log("Alisher muzqaymoq yeyishi mumkin emas");
 }
 
-const personAge = 17;
+const personAge = 18;
+
 const isOldEnough = personAge >= 18;
 
 if (isOldEnough) {
   // console.log("Alisher prava olishi mumkin");
 } else {
   const yearsLeft = 18 - personAge;
+
+  // console.log(yearsLeft);
   // console.log(
   //   `Alisher hali prava olaolmaydi. Yana ${yearsLeft} yil kutib turing :)`
   // );
@@ -525,6 +530,112 @@ const inputYear = "1991";
 // Number() function
 // console.log(Number(inputYear), inputYear); // number (1991) // text ('1991')
 // console.log(inputYear + 18); // 199118
-// console.log(Number(inputYear) + 18);
+// console.log(Number(inputYear) + 18); // 2009
 // console.log(Number("Alisher")); // NaN // Nomer emas // Not a Number // Mavjud bo'lmagan nomer
 // console.log(String(20), 20); // text doim oq rangda ko'rinadi
+
+// 4 chi dars
+
+function testEqual(vallue) {
+  if (vallue == 12) {
+    return "Teng";
+  }
+  return "Teng emas";
+}
+
+// console.log(testEqual(10));
+
+/*
+
+3 === 3 teng
+3 === "3" teng emas
+*/
+
+/*
+
+3 == 3 teng
+3 == "3" teng 
+*/
+
+function testEqualTwo(vallue) {
+  if (vallue === 12) {
+    return "Teng";
+  }
+  return "Teng emas";
+}
+
+// console.log(testEqualTwo("12"));
+
+function compareEquality(a, b) {
+  if (a == b) {
+    return "Teng";
+  }
+  return "Teng emas";
+}
+
+// console.log(compareEquality(10, "10"));
+
+function testNotEqual(value) {
+  if (value != 77) {
+    return "Teng emas";
+  }
+  return "Teng";
+}
+
+// console.log(testNotEqual("77"));
+
+function testNotEqualTwo(value) {
+  if (value !== 77) {
+    return "Teng emas";
+  }
+  return "Teng";
+}
+
+// console.log(testNotEqualTwo("77"));
+
+// Logical operator
+
+function testGreaterThan(value) {
+  if (value > 100) {
+    return "100-dan ko'p";
+  }
+  if (value > 10) {
+    return "10-dan ko'p";
+  }
+  return "10 yoki undan kam";
+}
+
+// console.log(testGreaterThan(10));
+
+function testGreaterThanOrEqual(value) {
+  if (value >= 20) {
+    return "20 yoki undan ko'p";
+  }
+  if (value >= 10) {
+    return "10 yoki undan ko'p";
+  }
+  return "10-dan kam";
+}
+
+// console.log(testGreaterThanOrEqual(20));
+
+function testLessThan(value) {
+  if (value < 25) {
+    return "25-dan kam";
+  }
+  if (value < 55) {
+    return "55-dan kam";
+  }
+  return "55 yoki undan ko'p";
+}
+
+// console.log(testLessThan(23));
+
+function testLessOrEqual(value) {
+  if (value <= 12) {
+    return "12-dan kichkina yoki teng";
+  }
+}
+
+
+
