@@ -637,5 +637,165 @@ function testLessOrEqual(value) {
   }
 }
 
+// and (va &&) operator
 
+function testLogicalAnd(value) {
+  if (value <= 50 && value >= 25) {
+    return "between 50 and 25";
+  }
 
+  return "low than 25";
+}
+
+// console.log(testLogicalAnd(50));
+
+// or (yoki || ) operator
+
+function testLogicalOr(value) {
+  if (value < 10 || value > 20) {
+    return "low than 10 or more than 20";
+  }
+  return "Something";
+}
+
+// console.log(testLogicalOr(21));
+
+function testSize(value) {
+  if (value < 5) {
+    return "Tiny // Juda kichik";
+  } else if (value < 10) {
+    return "Small // Kichik";
+  } else if (value < 15) {
+    return "Medium // O'rtacha";
+  } else if (value < 20) {
+    return "Large // Katta";
+  } else {
+    return "Huge // Juda katta";
+  }
+}
+
+// console.log(testSize(21));
+
+// switch xolatga qarab o'zgaradi if else bilan bir xil faqat ishlatilishi boshqacha
+
+function caseInSwitch(value) {
+  let javoblar = "";
+
+  switch (value) {
+    case 1:
+      javoblar = "Alisher";
+      break;
+
+    case 2:
+      javoblar = "Anvar";
+      break;
+    case 3:
+      javoblar = "Oybek";
+      break;
+    case 4:
+      javoblar = "Axmad";
+  }
+
+  console.log(javoblar);
+  /*
+  javoblarni console.log qilib chiqarganimiz uchun 
+  funksiyni o'zini ishlatsak xam consoleda isimlar chiqyapti
+  */
+}
+// caseInSwitch(4);
+
+function switchOfElse(value) {
+  let javoblar = "";
+  switch (value) {
+    case "a":
+      javoblar = "Apple // Olma ";
+      break;
+    case "b":
+      javoblar = "Bird // Qush";
+      break;
+    case "c":
+      javoblar = "Cat // Mushik";
+      break;
+    default: // default ni else ni o'rnida ishlatamiz
+      // default = yoki shu javoblarni ishlat
+      javoblar = "Somthing // Nimadur";
+      break;
+  }
+  console.log(javoblar);
+}
+
+// value o'rnida "a" "b" "c" dan boshqa narsa ishlatsak
+// console da shuni ko'rishimiz mumkin "Somthing // Nimadur"
+
+// switchOfElse(10);
+
+function switchSize(value) {
+  let javoblar = "";
+
+  switch (value) {
+    case 1:
+    case 2:
+    case 3:
+      javoblar = "Low // Kam";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      javoblar = " Mid // O'rtacha";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      javoblar = "High // Ko'p";
+      break;
+
+    default:
+      javoblar = "Something // Nimadur";
+      break;
+  }
+  console.log(javoblar);
+}
+
+// switchSize("Alisher");
+
+// if else condition = holat ni switch condition = holat bilan almashtiramiz
+
+function chainToSwitch(value) {
+  let javoblarIfElse = "";
+  let javoblarSwitch = "";
+
+  if (value === "Bob") {
+    javoblarIfElse = "Marley";
+  } else if (value === 42) {
+    javoblarIfElse = "Javob: 42";
+  } else if (value === 1) {
+    javoblarIfElse = "FullStack #1";
+  } else if (value === 99) {
+    javoblarIfElse = "Code yozishni juda sog'indim";
+  } else if (value === 7) {
+    javoblarIfElse = "Ko'proq praktika qilinglar";
+  }
+
+  switch (value) {
+    case "Bob":
+      javoblarSwitch = "Marley";
+      break;
+    case 42:
+      javoblarSwitch = "Javob: 42";
+      break;
+    case 1:
+      javoblarSwitch = "FullStack #1";
+      break;
+    case 99:
+      javoblarSwitch = "Code yozishni juda sog'indim";
+      break;
+    case 7:
+      javoblarSwitch = "Ko'proq praktika qilinglar";
+      break;
+  }
+
+  console.log(javoblarIfElse);
+  console.log(javoblarSwitch);
+}
+
+// chainToSwitch(7);
